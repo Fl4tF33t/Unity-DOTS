@@ -41,11 +41,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5039466674647266737, guid: 2519b3902e14ad8458064df447931227, type: 3}
       propertyPath: range
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -5039466674647266737, guid: 2519b3902e14ad8458064df447931227, type: 3}
       propertyPath: targetFaction
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2393531277629510341, guid: 2519b3902e14ad8458064df447931227, type: 3}
+      propertyPath: healthAmount
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -2393531277629510341, guid: 2519b3902e14ad8458064df447931227, type: 3}
+      propertyPath: healthAmountMax
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 1241210363089854442, guid: 2519b3902e14ad8458064df447931227, type: 3}
       propertyPath: m_Mesh
@@ -124,6 +132,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2160436770769424574, guid: 2519b3902e14ad8458064df447931227, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3212537886464708317}
+    - targetCorrespondingSourceObject: {fileID: 2160436770769424574, guid: 2519b3902e14ad8458064df447931227, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2119990214876633265}
   m_SourcePrefab: {fileID: 100100000, guid: 2519b3902e14ad8458064df447931227, type: 3}
 --- !u!1 &3132040707080359457 stripped
 GameObject:
@@ -155,6 +166,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPositionTransform: {fileID: 7390757004575109322}
+--- !u!114 &-2119990214876633265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3132040707080359457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7b77d087097734f8f3099529e68f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerMax: 0.5
+  attackDistance: 2
+  damageAmount: 5
+  colliderSize: 0.5
 --- !u!4 &6118944515706379552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7090508836526687167, guid: 2519b3902e14ad8458064df447931227, type: 3}
